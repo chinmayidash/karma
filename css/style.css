@@ -1,0 +1,423 @@
+/*1.0.css reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*2.0.Global*/
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.clear-fix {
+	clear: both;
+} 
+
+ul li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 60px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+h3 {
+	font-size: 36px;
+	line-height: 46px;
+}
+
+h4 {
+	font-size: 32px;
+	line-height: 42px;
+}
+
+h5 {
+	font-size: 28px;
+	line-height: 38px;
+}
+
+h6 {
+	font-size: 24px;
+	line-height: 34px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 24px;
+	color: #60605e;
+}
+
+label {
+	font-size: 18px;
+	line-height: 24px;
+	color: #e2e2e2;
+}
+.center-content {
+	text-align: center;
+}
+
+/*3.0.header*/
+#header {
+	background-color: #313332;
+	min-height: 50px;
+}
+
+#header .logo {
+	float: left;
+	padding: 10px 0px;
+
+}
+
+#header .navigation {
+    float: right;
+    padding: 11px 0px;
+}
+
+#header .navigation ul li a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    padding: 0 10px;
+}
+
+#header .navigation ul li a:hover,
+#header .navigation ul li a:focus,
+#header .navigation ul li a:active {
+	color: #07bee6;
+	outline: none;
+}
+
+/*4.0.hero section*/
+#hero {
+    background-image: url("../images/hero.jpg");
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .hero_text {
+	background-color: rgba(60,55,52,0.8);
+	padding: 20px 80px 20px 20px;
+	margin: 80px 0 70px 400px;
+	float: right;
+}
+
+#hero .hero_text h2 {
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#hero .hero_text h2 span {
+	font-weight: 200;
+}
+
+/*5.0feature section*/
+#features {
+ 	padding: 45px 0 30px 0;
+}
+
+#features .features_column {
+    float: left;
+    width: 33.33%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#features .features_column .fa {
+	font-size: 50px;
+	color: #fff;
+}
+
+#features .features_column figure {
+    padding: 10px;
+    width: 60px;
+    margin: 10px auto;
+    background-color: #303131;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+   	transition: all ease-in-out .5s;
+}
+
+#features .features_column figure:hover,
+#features .features_column figure:focus,
+#features .features_column figure:active {
+	background-color: #00c7e8;
+	outline: none;
+	border-radius: 50%;
+}
+
+#features .features_column .title h6 {
+	color: #032320;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#features .features_column .title h6:hover {
+	color: #00c7e8;
+}
+
+/*6.0.work section*/
+#works {
+	padding: 30px 0 25px 0;
+}
+
+#works .title h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+#works .description p {
+	max-width: 900px;
+	margin: 15px auto 30px auto;
+}
+
+#works .gallery figure {
+	float: left;
+	width: 20%;
+	height: auto;
+	overflow: hidden;
+}
+
+#works .gallery figure img {
+	width: 100%;
+	display: block;
+}
+
+/*7.0.team section*/
+#team {
+	padding: 50px 0;
+}
+
+#team .members_column {
+	float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+#team .members_column figure {
+	padding: 0 10px 0 10px;
+	margin-bottom: 10px;
+}
+
+
+#team .members_column figure img {
+	border-radius: 50%;
+}
+
+#team .members_column .NameOfMember {
+	padding: 0px 25px;
+}
+
+#team .members_column .NameOfMember h5 {
+	color: #5e5e5e;
+	font-weight: 300;
+}
+
+/*8.0promo section*/
+#promo {
+	background-image: url(../images/promo-bg.png);
+	background-repeat: repeat;
+	min-height: 200px;
+}
+
+#promo .container {
+	position: relative;
+	padding: 50px 0 40px 0;
+}
+
+#promo article {
+	float: right;
+	width: 60%;
+}
+
+#promo .promo_title {
+	margin-bottom: 15px;
+}
+
+#promo .promo_title h4 {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#promo .promo_text {
+	float: left;
+}
+
+#promo .promo_text p {
+	color: #e1e3e2;
+}
+
+#promo article>.promo_text:nth-child(2) {
+	width: 60%;
+	margin-right: 5%;
+}
+
+#promo article>.promo_text:nth-child(3) {
+	width: 30%;
+	margin-right: 5%;
+}
+
+#promo .promo_pic_img {
+	position: absolute;
+	max-width: 300px;
+	bottom: 0;
+}
+
+/*9.0.progress section*/
+#progress {
+	padding: 40px 0 30px 0;
+}
+
+#progress .progress_column {
+	float: right;
+	width: 25%;
+	padding: 0 25px 0 25px;
+	box-sizing: border-box;
+}
+
+#progress .large_num {
+	padding: 10px 30px;
+}
+
+#progress .large_num p {
+	color: #323433;
+	font-weight: 900;
+	margin-left: 20px;
+	font-family: raleway;
+	font-size: 30px;
+}
+
+#progress .num_type {
+	padding: 0 35px;
+}
+
+#progress .num_type h6 {
+	color: #55dcd6;
+	font-weight: 900;
+	margin-left: 15px;
+}
+
+/*10.0.footer section*/
+#footer {
+	background-color: #393C3A;
+	padding: 30px 0 55px 0;
+}
+
+#footer .footer_column{
+	float: left;
+	width: 33.33%;
+}
+
+#footer .title {
+	padding: 0 0 15px 0;
+}
+
+#footer h5 {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#footer p {
+	color: #9c9e9d;
+}
+
+#footer .get_in_touch_text label {
+	float: left;
+	width: 25%;
+	display: block;
+}
+
+#footer .get_in_touch_text p {
+	float: right;
+	width: 75%;
+}
+
+#footer .social_icons .fa {
+	font-size: 20px;
+	color: #fff;
+}
+
+#footer .social_icons li a {
+    padding: 10px;
+    width: 30px;
+    margin: 10px 0px;
+    background-color: #00c6e1;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+#post_footer {
+	 background-color: #252726;
+	 height: 20px;
+	 padding: 15px 0;
+}
+
+#post_footer p {
+	text-align: center;
+	color: #babcbb;
+}
