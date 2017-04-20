@@ -1,0 +1,62 @@
+@media screen and (max-width: 980px) {
+	#team .members_column {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	#hero .hero_text h2 {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 701px) {
+	#hero {
+		height: 400px;
+	}
+	#hero .hero_text h2 {
+		font-size: 20px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	#progress .progress_column {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+	#works .gallery figure {
+		width: 50%;
+	}
+	#features .features_column {
+		width: 100%;
+	}
+	#promo .promo_pic_img {
+    position: static;
+    margin-bottom: 10px;
+	}
+	#promo article {
+    width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	#team .members_column {
+		width: 100%;
+		margin-bottom: 10px;
+	}	
+	#footer .footer_column {
+		width: 100%;
+	}
+	#progress .num_type h6 {
+		font-size: 20px;
+	}
+
+}
+@media screen and (max-width: 361px) {
+	#progress .progress_column {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#works .gallery figure {
+		width: 100%;
+	}
+
+}

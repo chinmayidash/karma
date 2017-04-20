@@ -47,15 +47,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+* {
+	box-sizing: border-box;
+}
 /*2.0.Global*/
 body {
 	font-family: 'Lato', sans-serif;
+	word-wrap: break-word;
 }
 
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .clear-fix {
@@ -191,7 +195,7 @@ label {
 
 #features .features_column figure {
     padding: 10px;
-    width: 60px;
+    width: 80px;
     margin: 10px auto;
     background-color: #303131;
     border-radius: 10px;
@@ -337,28 +341,23 @@ label {
 	width: 25%;
 	padding: 0 25px 0 25px;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 #progress .large_num {
-	padding: 10px 30px;
+	margin-bottom: 10px;
 }
 
 #progress .large_num p {
-	color: #323433;
-	font-weight: 900;
-	margin-left: 20px;
-	font-family: raleway;
-	font-size: 30px;
-}
-
-#progress .num_type {
-	padding: 0 35px;
+    color: #323433;
+    font-weight: 900;
+    font-family: raleway;
+    font-size: 30px;
 }
 
 #progress .num_type h6 {
 	color: #55dcd6;
 	font-weight: 900;
-	margin-left: 15px;
 }
 
 /*10.0.footer section*/
@@ -370,6 +369,7 @@ label {
 #footer .footer_column{
 	float: left;
 	width: 33.33%;
+	padding: 0 10px;
 }
 
 #footer .title {
@@ -403,7 +403,6 @@ label {
 
 #footer .social_icons li a {
     padding: 10px;
-    width: 30px;
     margin: 10px 0px;
     background-color: #00c6e1;
     margin-bottom: 15px;
@@ -413,7 +412,6 @@ label {
 
 #post_footer {
 	 background-color: #252726;
-	 height: 20px;
 	 padding: 15px 0;
 }
 
